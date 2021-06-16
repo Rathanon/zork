@@ -1,6 +1,4 @@
-package io.muic.ooc.fab;
-
-import java.util.Scanner;
+package io.muic.ssc.zork;
 
 public class Main {
     public static void main(String[] args) {

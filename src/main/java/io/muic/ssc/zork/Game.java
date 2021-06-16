@@ -1,4 +1,6 @@
-package io.muic.ooc.fab;
+package io.muic.ssc.zork;
+
+import io.muic.ssc.zork.command.Command;
 
 import java.util.List;
 import java.util.Scanner;
@@ -14,7 +16,18 @@ public class Game {
             Scanner in = new Scanner(System.in);
             String s = in.nextLine();
             List<String> words = commandParser.parse(s);
+            Command command = CommandFactory.get(words.get(0));
+            command.execute(this, words.subList(1, words.size()));
             output.println(s);
         }
+    }
+
+    public GameOutput getOutput() {
+        return output;
+    }
+
+    public void exit() {
+
+        System.exit(0);
     }
 }
