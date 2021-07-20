@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="zork 23.37.22" />
         <module name="zork" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zork 23.37.22" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
